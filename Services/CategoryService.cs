@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using lab5.Domain.Models;
 using lab5.Domain.Services;
+using lab5.Domain.Repositories;
 
 namespace lab5.Domain.Services
 {

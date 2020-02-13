@@ -5,7 +5,7 @@ using lab5.Domain.Models;
 using lab5.Domain.Repositories;
 using lab5.Persistence.Contexts;
 
-namespace lab5.Domain.Persistence.Repositories
+namespace lab5.Persistence.Repositories
 {
     public class CategoryRepository : BaseRepository, ICategoryRepository
     {

@@ -1,15 +1,20 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using lab5.Domain.Repositories;
+using lab5.Domain.Services;
+using lab5.Persistence.Contexts;
+using lab5.Persistence.Repositories;
+using lab5.Services;
 
 namespace lab5
 {
@@ -31,7 +36,7 @@ namespace lab5
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddDbContext<AppDbContext>(options => {
-                options.UseInMemoryDatabase("lab5-in-memory");
+                options.UseInMemoryDatabase("supermarket-api-in-memory");
                 // This is where we need to MySQL Connection or anything other
             });
 

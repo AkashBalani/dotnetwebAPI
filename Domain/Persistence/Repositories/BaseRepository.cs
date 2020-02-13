@@ -1,7 +1,7 @@
-using lab5.Domain.Persistence.Contexts;
+using lab5.Persistence.Contexts;
 // The base repo receives an instance of AppDbContext
 
-namespace lab5.Domain.Persistence.Repositories
+namespace lab5.Persistence.Repositories
 {
     public abstract class BaseRepository
     {

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using lab5.Domain.Models;
 
-namespace lab5.Domain.Persistence.Contexts
+namespace lab5.Persistence.Contexts
 {
   public class AppDbContext : DbContext
   {

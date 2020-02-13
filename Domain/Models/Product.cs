@@ -1,4 +1,4 @@
-namespace lab5.API.Domain.Models
+namespace lab5.Domain.Models
 {
     public class Product
     {
